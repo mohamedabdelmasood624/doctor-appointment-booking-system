@@ -9,16 +9,17 @@
 
 ### UC2 — Book an Appointment
 - The patient books an appointment during an available time slot.
-- Requirement: R2
-
-### UC3 — Respect the Upcoming Appointment Limit
 - The system ensures that the patient does not exceed the configured limit N.
 - Only future Pending and Accepted appointments count toward the limit.
 - Declined, Cancelled, and past appointments do not count.
-- Requirement: R4
+- Requirement: R2, R4
 
 ## Actor: Doctor
 
-### UC4 — Accept or Decline an Appointment Request
-- The doctor accepts or declines an appointment request.
+### UC3 — Accept an Appointment Request
+- The doctor accepts an appointment request.
+- Requirement: R3
+
+### UC4 — Decline an Appointment Request
+- The doctor declines an appointment request.
 - Requirement: R3
