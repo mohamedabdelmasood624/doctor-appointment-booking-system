@@ -20,7 +20,8 @@ sequenceDiagram
     Patient->>Appt: bookAppointment(slotId)
     activate Appt
     
-    note over Appt: Check upcoming appointments count (Pending + Accepted)
+    Appt->>Appt: isUpcoming()
+    note over Appt: Count active (PENDING + ACCEPTED) appointments
     
     alt Upcoming Count < N
         Appt->>Slot: isAvailable()
