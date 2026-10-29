@@ -14,7 +14,7 @@ flowchart LR
         UC3(["Accept Appointment Request"])
         UC4(["Decline Appointment Request"])
 
-        Constraint["Constraint: N = 3<br/>Count future Pending and Accepted appointments<br/>Exclude Declined, Cancelled, and past appointments"]
+        Constraint["Constraint: N = 3<br/>Count future Pending and Accepted appointments<br/>Exclude Declined, and past appointments"]
 
         UC2 -.-> Constraint
     end
