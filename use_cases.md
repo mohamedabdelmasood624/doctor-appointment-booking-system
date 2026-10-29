@@ -11,7 +11,7 @@
 - The patient books an appointment during an available time slot.
 - The system ensures that the patient does not exceed the configured limit N.
 - Only future Pending and Accepted appointments count toward the limit.
-- Declined, Cancelled, and past appointments do not count.
+- Declined, and past appointments do not count.
 - Requirement: R2, R4
 
 ## Actor: Doctor
